@@ -1,5 +1,6 @@
-import { Navbar } from '../../components';
+import { Navbar, Card } from '../../components';
 import './index.css';
+import { Collections } from '../../constants';
 
 export default function LandingPage() {
 	window.onscroll = function () {
@@ -16,12 +17,24 @@ export default function LandingPage() {
 			element.style.backgroundColor = '';
 		}
 	}
-
+	// style={{ height: '150vh' }}
 	return (
-		<div style={{ height: '150vh' }}>
+		<div>
 			<Navbar />
 			<div className="section-1">
 				<h1>Give Blood save a life</h1>
+			</div>
+			<div className="section-2">
+				<div className="card">
+					<h3>Main Blood Groups</h3>
+					{Collections.mainBloodGroups.map(({ type, detail }) => {
+						return <Card variant="blood-group" type={type} detail={detail} />;
+					})}
+				</div>
+			</div>
+			<div className="section-3">
+				<div className="wrapper"></div>
+				<h3>Types of blood donation</h3>
 			</div>
 		</div>
 	);

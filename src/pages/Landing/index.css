@@ -1,9 +1,10 @@
+/* Section 1 */
 .section-1 {
 	background-image: url('../../assets/img/section1.jpg');
-	height: 1000px;
+	height: 918px;
 	background-position: top;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	display: flex;
 	justify-content: center;
 	padding-top: 8%;
@@ -19,4 +20,62 @@
 	text-transform: uppercase;
 	color: #a30000;
 	font-stretch: 77;
+}
+
+/* Section 2 */
+
+.section-2 {
+	background-image: url('../../assets/img/section2.jpg');
+	height: 700px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-2 .card {
+	width: 40%;
+	height: 90%;
+	filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.25));
+	background: rgba(229, 222, 217, 0.61);
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5%;
+}
+.section-2 .card h3 {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 16px;
+	color: #a30000;
+	text-align: justify;
+	text-transform: uppercase;
+}
+
+/* Section 3 */
+
+.section-3 {
+	background-image: url('../../assets/img/group3.jpg');
+	height: 700px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+}
+
+.section-3 h3 {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #a30000;
 }

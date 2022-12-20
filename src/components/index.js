@@ -1,2 +1,4 @@
 import Navbar from './navbar/';
-export { Navbar };
+import Card from './cards';
+
+export { Navbar, Card };
