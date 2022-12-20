@@ -67,7 +67,6 @@
 	background-size: cover;
 	display: flex;
 	justify-content: center;
-	/* align-items: center; */
 }
 
 .section-3 h3 {
@@ -78,4 +77,16 @@
 	line-height: 20px;
 	text-transform: uppercase;
 	color: #a30000;
+}
+
+/* Responsive code */
+
+@media only screen and (max-width: 600px) {
+	.section-2 .card {
+		width: 100%;
+	}
+	.section-1 h1 {
+		font-size: 24px;
+		margin-top: 20%;
+	}
 }
