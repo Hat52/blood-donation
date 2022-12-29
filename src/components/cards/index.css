@@ -132,3 +132,9 @@
 	animation-name: details;
 	animation-fill-mode: backwards;
 }
+.even {
+	float: left;
+}
+.odd {
+	float: right;
+}

@@ -35,7 +35,10 @@ export default function LandingPage() {
 			<div className="section-3">
 				<h3>Types of blood donation</h3>
 				<div className="container-cards">
-					<Card variant="blood-donation" />
+					<Card variant="blood-donation" className="even" />
+					<Card variant="blood-donation" className="odd" />
+					<Card variant="blood-donation" className="even" />
+					<Card variant="blood-donation" className="odd" />
 				</div>
 			</div>
 		</div>

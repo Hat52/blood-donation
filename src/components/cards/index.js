@@ -1,7 +1,7 @@
 import { WhiteLogo } from '../../assets/img';
 import './index.css';
 
-export default function Cards({ variant, type, detail }) {
+export default function Cards({ variant, type, detail, className }) {
 	switch (variant) {
 		case 'blood-group':
 			return (
@@ -12,7 +12,7 @@ export default function Cards({ variant, type, detail }) {
 			);
 		case 'blood-donation':
 			return (
-				<div className="blood-donation-card">
+				<div className={`blood-donation-card ${className}`}>
 					<div className="name">
 						<img src={WhiteLogo} alt="logo" />
 						<h3>Full Blood Donation</h3>
