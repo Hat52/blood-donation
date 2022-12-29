@@ -1,4 +1,4 @@
-import { Navbar, Card } from '../../components';
+import { Navbar, Card, Footer } from '../../components';
 import './index.css';
 import { Collections } from '../../constants';
 
@@ -41,6 +41,7 @@ export default function LandingPage() {
 					<Card variant="blood-donation" className="odd" />
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 }
