@@ -51,6 +51,7 @@
 
 .blood-donation-card {
 	display: flex;
+	width: max-content;
 }
 
 .blood-donation-card .name {
@@ -82,8 +83,8 @@
 	height: 30%;
 }
 .blood-donation-card .details {
-	/* width: 237px; */
 	height: 203px;
+	width: 500px;
 	display: none;
 	background: #e5ded8;
 	border-radius: 0px 12px 12px 0px;
@@ -92,12 +93,13 @@
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 30px;
-	text-transform: capitalize;
-	color: #ffffff;
+	justify-content: center;
+	align-items: center;
+	color: #a30000;
 }
 
 /* The animation code */
-@keyframes example {
+@keyframes name {
 	from {
 		width: 300px;
 	}
@@ -113,20 +115,20 @@
 	}
 	to {
 		width: 237px;
-		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-fill-mode: backwards;
 	}
 }
 
 .blood-donation-card .name:hover {
-	animation-name: example;
+	cursor: pointer;
+	animation-name: name;
 	border-radius: 12px 0 0 12px;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }
 
-.blood-donation-card .name:hover .blood-donation-card .details {
-	/* animation-name: details; */
-	display: block !important;
-	/* animation-duration: 1s; */
-	/* animation-fill-mode: forwards; */
+.blood-donation-card .name:hover + .details {
+	display: flex !important;
+	animation-name: details;
+	animation-fill-mode: backwards;
 }
