@@ -119,7 +119,7 @@
 	}
 }
 
-.blood-donation-card .name:hover {
+.blood-donation-card:hover {
 	cursor: pointer;
 	animation-name: name;
 	border-radius: 12px 0 0 12px;
@@ -127,7 +127,7 @@
 	animation-fill-mode: forwards;
 }
 
-.blood-donation-card .name:hover + .details {
+.blood-donation-card:hover .details {
 	display: flex !important;
 	animation-name: details;
 	animation-fill-mode: backwards;
@@ -137,4 +137,5 @@
 }
 .odd {
 	float: right;
+	margin-left: auto;
 }

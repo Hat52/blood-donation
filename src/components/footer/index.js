@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { about } from '../../constants/strings';
+import { about, githubString } from '../../constants/strings';
 import { TextLogo, Github, Facebook, Google, Twitter } from '../../assets/img';
 import './index.css';
 
@@ -19,7 +19,7 @@ export default function Footer() {
 				<img src={TextLogo} alt="logo" />
 				<p>
 					An open-source project developed and designed by{' '}
-					<a target="_blank" href="https://github.com/Hat52" className="here-link">
+					<a target="_blank" href={githubString} className="here-link">
 						Hamza Ali
 					</a>
 				</p>
