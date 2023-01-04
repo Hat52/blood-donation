@@ -15,9 +15,9 @@ export default function Cards({ variant, type, detail, className }) {
 				<div className={`blood-donation-card ${className}`}>
 					<div className="name">
 						<img src={WhiteLogo} alt="logo" />
-						<h3>Full Blood Donation</h3>
+						<h3>{type}</h3>
 					</div>
-					<div className="details">Hello from the other side</div>
+					<div className="details">{detail}</div>
 				</div>
 			);
 		default:

@@ -35,10 +35,14 @@ export default function LandingPage() {
 			<div className="section-3">
 				<h3>Types of blood donation</h3>
 				<div className="container-cards">
-					<Card variant="blood-donation" className="even" />
-					<Card variant="blood-donation" className="odd" />
-					<Card variant="blood-donation" className="even" />
-					<Card variant="blood-donation" className="odd" />
+					{Collections.bloodDonationTypes.map(({ name, description }, index) => (
+						<Card
+							variant="blood-donation"
+							className={index % 2 === 0 ? 'even' : 'odd'}
+							type={name}
+							detail={description}
+						/>
+					))}
 				</div>
 			</div>
 			<Footer />
