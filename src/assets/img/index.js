@@ -5,5 +5,7 @@ import Github from './github.svg';
 import Twitter from './twitter.svg';
 import Google from './google.svg';
 import Facebook from './facebook.svg';
+import Login from './login.svg';
+import Logo from './logo.svg';
 
-export { TextLogo, Section1, WhiteLogo, Github, Facebook, Google, Twitter };
+export { TextLogo, Section1, WhiteLogo, Github, Facebook, Google, Twitter, Login, Logo };
