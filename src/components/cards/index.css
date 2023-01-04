@@ -114,24 +114,27 @@
 		width: 0;
 	}
 	to {
-		width: 237px;
-		-webkit-animation-fill-mode: backwards;
+		width: 500px;
+		-webkit-animation-fill-mode: forwards;
 	}
 }
 
-.blood-donation-card:hover {
+.blood-donation-card:hover .name {
 	cursor: pointer;
 	animation-name: name;
 	border-radius: 12px 0 0 12px;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
+	min-width: fit-content;
 }
 
 .blood-donation-card:hover .details {
 	display: flex !important;
+	animation-duration: 1s;
 	animation-name: details;
 	animation-fill-mode: backwards;
 }
+
 .even {
 	float: left;
 }
