@@ -17,7 +17,9 @@ export default function Cards({ variant, type, detail, className }) {
 						<img src={WhiteLogo} alt="logo" />
 						<h3>{type}</h3>
 					</div>
-					<div className="details">{detail}</div>
+					<div className="details">
+						<p className="details-text">{detail}</p>
+					</div>
 				</div>
 			);
 		default:

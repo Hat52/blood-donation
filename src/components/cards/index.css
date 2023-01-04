@@ -133,6 +133,8 @@
 	animation-duration: 1s;
 	animation-name: details;
 	animation-fill-mode: backwards;
+	overflow: hidden;
+	padding-left: 2% !important;
 }
 
 .even {
@@ -141,4 +143,14 @@
 .odd {
 	float: right;
 	margin-left: auto;
+}
+@keyframes slide-right {
+	to {
+		transform: translateX(0);
+	}
+}
+
+.details-text {
+	animation: 1s slide-right 1s forwards;
+	transform: translateX(100%);
 }
