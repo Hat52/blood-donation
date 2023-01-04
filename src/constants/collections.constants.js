@@ -9,7 +9,7 @@ const Navbar = [
 	},
 	{
 		name: 'Login',
-		link: '#'
+		link: 'login'
 	}
 ];
 
