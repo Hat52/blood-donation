@@ -7,5 +7,6 @@ import Google from './google.svg';
 import Facebook from './facebook.svg';
 import Login from './login.svg';
 import Logo from './logo.svg';
+import Signup from './signup.png';
 
-export { TextLogo, Section1, WhiteLogo, Github, Facebook, Google, Twitter, Login, Logo };
+export { TextLogo, Section1, WhiteLogo, Github, Facebook, Google, Twitter, Login, Logo, Signup };

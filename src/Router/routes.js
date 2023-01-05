@@ -1,5 +1,5 @@
 import { useRoutes } from 'react-router-dom';
-import { Landing, Login } from '../pages';
+import { Landing, Login, Signup } from '../pages';
 
 export default function Routes() {
 	return useRoutes([
@@ -10,6 +10,10 @@ export default function Routes() {
 		{
 			path: '/login',
 			element: <Login />
+		},
+		{
+			path: '/join',
+			element: <Signup />
 		}
 	]);
 }
