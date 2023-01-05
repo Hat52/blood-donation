@@ -38,7 +38,7 @@ export default function Signup() {
 				<Textfield placeholder="Confirm Password" />
 				<Button text="Join" onClick={() => console.log('')} />
 				<div className="link-button-container">
-					<Button text="contact us" variant="link" to="forgot" />
+					<Button text="contact us" variant="link" to="/contact" />
 					<Button text="Login" variant="link" to="/login" />
 				</div>
 				<LinkImage links={links} />

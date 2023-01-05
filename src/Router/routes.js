@@ -1,5 +1,5 @@
 import { useRoutes } from 'react-router-dom';
-import { Landing, Login, Signup } from '../pages';
+import { Landing, Login, Signup, ContactUs } from '../pages';
 
 export default function Routes() {
 	return useRoutes([
@@ -14,6 +14,10 @@ export default function Routes() {
 		{
 			path: '/join',
 			element: <Signup />
+		},
+		{
+			path: '/contact',
+			element: <ContactUs />
 		}
 	]);
 }
