@@ -6,10 +6,6 @@ const Navbar = [
 	{
 		name: 'About',
 		link: '#'
-	},
-	{
-		name: 'Login',
-		link: 'login'
 	}
 ];
 
