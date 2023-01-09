@@ -5,7 +5,8 @@ export default function Dashboard() {
 	const endDiv = useRef(null);
 
 	const scrollToBottom = () => {
-		endDiv.current?.scrollIntoView({ behavior: 'smooth' });
+		const element = document.getElementById('request-container');
+		element.scrollTop = element.scrollHeight;
 	};
 
 	useEffect(() => {
@@ -14,13 +15,13 @@ export default function Dashboard() {
 	return (
 		<div className="dashboard-container">
 			<div className="details-section">sa</div>
-			<div className="request-section hide-scroll-bar">
+			<div ref={endDiv} id="request-container" className="request-section hide-scroll-bar">
 				{Array(10)
 					.fill('0')
 					.map((_, index) => (
 						<>
 							<Request />
-							{index === 9 ? <div ref={endDiv} /> : null}
+							{index === 9 ? <div /> : null}
 						</>
 					))}
 			</div>
