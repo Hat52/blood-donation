@@ -17,6 +17,10 @@ export default function Navbar() {
 				})}
 				{isAuthenticated ? (
 					<Button
+						className="auth-button"
+						style={{
+							backgroundColor: 'none'
+						}}
 						onClick={() =>
 							logout({
 								returnTo: window.location.origin
@@ -25,7 +29,14 @@ export default function Navbar() {
 						text="Log out"
 					/>
 				) : (
-					<Button onClick={() => loginWithRedirect()} text="Log in" />
+					<Button
+						className="auth-button"
+						style={{
+							background: 'yellow !important'
+						}}
+						onClick={() => loginWithRedirect()}
+						text="Log in"
+					/>
 				)}
 			</div>
 		</div>
