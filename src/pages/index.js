@@ -3,5 +3,6 @@ import Login from './Login';
 import Signup from './Signup';
 import ContactUs from './Contactus';
 import GetHelp from './GetHelp';
+import Dashboard from './Dashboard';
 
-export { Landing, Login, Signup, ContactUs, GetHelp };
+export { Dashboard, Landing, Login, Signup, ContactUs, GetHelp };

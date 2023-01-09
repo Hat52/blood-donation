@@ -1,5 +1,5 @@
 import { useRoutes } from 'react-router-dom';
-import { Landing, Login, Signup, ContactUs, GetHelp } from '../pages';
+import { Landing, Login, Signup, ContactUs, GetHelp, Dashboard } from '../pages';
 
 export default function Routes() {
 	return useRoutes([
@@ -22,6 +22,10 @@ export default function Routes() {
 		{
 			path: '/help',
 			element: <GetHelp />
+		},
+		{
+			path: '/dashboard',
+			element: <Dashboard />
 		}
 	]);
 }
