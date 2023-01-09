@@ -1,0 +1,68 @@
+.dashboard-container {
+	display: flex;
+	height: 100vh;
+}
+.dashboard-container .details-section {
+	width: 70%;
+	background-color: yellow;
+	height: 100%;
+}
+.dashboard-container .request-section {
+	width: 30%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 2%;
+	overflow-y: scroll;
+}
+
+.request-section .request-card {
+	width: 100%;
+	height: 130px;
+	background: #ffffff;
+	border: 1px solid rgba(163, 0, 0, 0.28);
+	box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+	border-radius: 12px;
+	padding: 10px;
+	box-sizing: border-box;
+	filter: drop-shadow(-1px 0px 4px rgba(163, 0, 0, 0.25));
+	display: flex;
+	flex-direction: column;
+}
+
+.request-section .request-card .distance {
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 0px;
+	display: flex;
+	justify-content: flex-end;
+	text-align: right;
+	text-transform: capitalize;
+	color: #a30000;
+}
+
+.request-section .request-card .heading {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 20px;
+	display: flex;
+	align-items: flex-end;
+	text-transform: capitalize;
+}
+
+.details-div {
+	display: flex;
+	gap: 5%;
+}
+
+.details-div .details {
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 20px;
+	display: flex;
+	align-items: flex-end;
+	text-transform: capitalize;
+	color: #a30000;
+}
