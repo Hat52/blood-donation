@@ -13,7 +13,9 @@ export default function ContactUs() {
 					<textarea className="text-area" placeholder="Your Message" />
 					<Button text="Let's go" onClick={() => console.log('')} />
 				</div>
-				<Footer />
+				<div className="footer-container-contact">
+					<Footer />
+				</div>
 			</div>
 		</>
 	);
