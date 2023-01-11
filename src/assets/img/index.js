@@ -8,5 +8,18 @@ import Facebook from './facebook.svg';
 import Login from './login.svg';
 import Logo from './logo.svg';
 import Signup from './signup.png';
+import Pattern from './pattern.svg';
 
-export { TextLogo, Section1, WhiteLogo, Github, Facebook, Google, Twitter, Login, Logo, Signup };
+export {
+	Pattern,
+	TextLogo,
+	Section1,
+	WhiteLogo,
+	Github,
+	Facebook,
+	Google,
+	Twitter,
+	Login,
+	Logo,
+	Signup
+};

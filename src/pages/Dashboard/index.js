@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { Pattern } from '../../assets/img';
 import './index.css';
 
 export default function Dashboard() {
@@ -14,7 +15,12 @@ export default function Dashboard() {
 	}, []);
 	return (
 		<div className="dashboard-container">
-			<div className="details-section">sa</div>
+			<div className="details-section">
+				<div className="cards-container">
+					<Card />
+					<Card />
+				</div>
+			</div>
 			<div ref={endDiv} id="request-container" className="request-section hide-scroll-bar">
 				{Array(10)
 					.fill('0')
@@ -47,3 +53,12 @@ const Request = () => (
 		</div>
 	</div>
 );
+
+const Card = () => {
+	return (
+		<div className="stats-cards">
+			<img src={Pattern} className="pattern" />
+			<div className="description">8,000 + units of Blood is Reuired Everyday in Pakistan </div>
+		</div>
+	);
+};
