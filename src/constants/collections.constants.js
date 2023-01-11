@@ -51,4 +51,15 @@ const bloodDonationTypes = [
 	}
 ];
 
-export default { Navbar, mainBloodGroups, bloodDonationTypes };
+const rarestBloodType = [
+	'O positive 35%',
+	'O negative 13%',
+	'A positive 30%',
+	'A negative 8%',
+	'B positive 8%',
+	'B negative 2%',
+	'AB positive 2%',
+	'AB negative 1%'
+];
+
+export default { Navbar, mainBloodGroups, bloodDonationTypes, rarestBloodType };

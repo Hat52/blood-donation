@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Pattern } from '../../assets/img';
+import { Collections } from '../../constants';
 import './index.css';
 
 export default function Dashboard() {
@@ -19,6 +20,9 @@ export default function Dashboard() {
 				<div className="cards-container">
 					<Card />
 					<Card />
+				</div>
+				<div className="list-card-container">
+					<ListCard />
 				</div>
 			</div>
 			<div ref={endDiv} id="request-container" className="request-section hide-scroll-bar">
@@ -45,7 +49,7 @@ const Request = () => (
 		</div>
 		<div className="details-div">
 			<span className="heading">Address :</span>
-			<span className="details">Mohalla civil hospital sarai Naimat khan</span>
+			<span className="details">Mohalla civil hospital Sarai Naimat khan</span>
 		</div>
 		<div className="details-div">
 			<span className="heading">Due Date :</span>
@@ -59,6 +63,19 @@ const Card = () => {
 		<div className="stats-cards">
 			<img src={Pattern} className="pattern" />
 			<div className="description">8,000 + units of Blood is Required Everyday in Pakistan </div>
+		</div>
+	);
+};
+
+const ListCard = () => {
+	return (
+		<div className="rarest-blood-type">
+			<h3 className="h3">Rarest Blood Type</h3>
+			<ol>
+				{Collections.rarestBloodType.map((type) => (
+					<li>{type}</li>
+				))}
+			</ol>
 		</div>
 	);
 };
