@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Pattern } from '../../assets/img';
 import { Collections } from '../../constants';
+import { Tooltip } from '../../components/';
 import './index.css';
 
 export default function Dashboard() {
@@ -70,7 +71,10 @@ const Card = () => {
 const ListCard = () => {
 	return (
 		<div className="rarest-blood-type">
-			<h3 className="h3">Rarest Blood Type</h3>
+			<div className="heading-div">
+				<h3 className="h3">Rarest Blood Type</h3>
+				<Tooltip />
+			</div>
 			<ol>
 				{Collections.rarestBloodType.map((type) => (
 					<li>{type}</li>

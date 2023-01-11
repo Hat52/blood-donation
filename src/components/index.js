@@ -4,5 +4,6 @@ import Footer from './footer';
 import Textfield from './textField';
 import Button from './button';
 import LinkImage from './linkImages';
+import Tooltip from './tooltip';
 
-export { Navbar, Card, Footer, Textfield, Button, LinkImage };
+export { Navbar, Card, Footer, Tooltip, Textfield, Button, LinkImage };

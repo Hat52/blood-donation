@@ -146,3 +146,10 @@ ol li::before {
 	display: inline-block;
 	width: 1em;
 }
+
+.heading-div {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: fit-content;
+}
