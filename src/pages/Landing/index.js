@@ -19,7 +19,7 @@ export default function LandingPage() {
 	}
 	// style={{ height: '150vh' }}
 	return (
-		<div>
+		<>
 			<Navbar />
 			<div className="section-1">
 				<h1>Give Blood save a life</h1>
@@ -32,7 +32,7 @@ export default function LandingPage() {
 					})}
 				</div>
 			</div>
-			<div className="section-3">
+			<div className="section-3 hide-scroll-bar">
 				<h3>Types of blood donation</h3>
 				<div className="container-cards">
 					{Collections.bloodDonationTypes.map(({ name, description }, index) => (
@@ -46,6 +46,6 @@ export default function LandingPage() {
 				</div>
 			</div>
 			<Footer />
-		</div>
+		</>
 	);
 }
