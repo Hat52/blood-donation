@@ -1,15 +1,12 @@
 .footer-container {
-	position: fixed;
-	left: 0;
-	right: 0;
-	bottom: 0;
 	background: #ffffff;
 	box-shadow: 0px -1px 4px rgba(163, 0, 0, 0.25);
 	display: flex;
 	padding-left: 40px;
-	padding-right: 40px; 
+	padding-right: 40px;
 	justify-content: space-between;
 	align-items: center;
+	height: 140px;
 }
 .footer-container h3 {
 	font-family: 'Open Sans';
@@ -22,12 +19,10 @@
 
 .footer-container .about-p {
 	width: 45%;
-	height: 55.1px;
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 300;
 	font-size: 14px;
-	line-height: 20px;
 	text-transform: capitalize;
 	color: #768387;
 }
