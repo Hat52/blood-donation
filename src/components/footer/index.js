@@ -15,20 +15,20 @@ export default function Footer() {
 					</Link>
 				</p>
 			</div>
+			{/* <div className="social-links">
+				<img src={Github} alt="github" />
+				<img src={Google} alt="Google" />
+				<img src={Facebook} alt="Facebook" />
+				<img src={Twitter} alt="Twitter" />
+			</div> */}
 			<div className="social-links-container">
-				<img src={TextLogo} alt="logo" />
-				<p>
+				<img src={TextLogo} alt="logo" className="text-logo" />
+				<p className="open-source-link">
 					An open-source project developed and designed by{' '}
 					<a target="_blank" href={githubString} className="here-link">
 						Hamza Ali
 					</a>
 				</p>
-				<div className="social-links">
-					<img src={Github} alt="github" />
-					<img src={Google} alt="Google" />
-					<img src={Facebook} alt="Facebook" />
-					<img src={Twitter} alt="Twitter" />
-				</div>
 			</div>
 		</div>
 	);

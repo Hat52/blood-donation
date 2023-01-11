@@ -5,9 +5,11 @@
 	width: min-content;
 }
 
-.social-links-container .social-links {
+.social-links {
 	display: flex;
 	gap: 5px;
+	align-items: end;
+	height: 100%;
 }
 .social-links-container p {
 	font-family: 'Open Sans';

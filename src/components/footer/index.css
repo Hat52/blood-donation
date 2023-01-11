@@ -17,8 +17,11 @@
 	color: #a30000;
 }
 
+.footer-container .text-logo {
+	height: 30px;
+}
 .footer-container .about-p {
-	width: 45%;
+	width: 300px;
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 300;
@@ -29,4 +32,17 @@
 
 .here-link {
 	color: #a30000;
+}
+
+.open-source-link {
+	padding: 0;
+	margin: 0;
+	width: 183px;
+}
+
+.social-links-container {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 2px;
 }
