@@ -1,7 +1,17 @@
 .dashboard-container {
 	display: flex;
-	height: 100vh;
+	height: 93vh;
+	padding-top: 40px;
+	overflow: hidden;
+	z-index: 0;
 }
+
+.main-dashboard-container {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
 .dashboard-container .details-section {
 	width: 70%;
 	padding-left: 5%;

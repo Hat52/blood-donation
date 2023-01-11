@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Pattern } from '../../assets/img';
 import { Collections } from '../../constants';
-import { Button, Tooltip } from '../../components/';
+import { Button, Navbar, Tooltip } from '../../components/';
 import './index.css';
 
 export default function Dashboard() {
@@ -14,37 +14,43 @@ export default function Dashboard() {
 
 	useEffect(() => {
 		scrollToBottom();
+		const element = document.getElementById('navbar');
+		element.style.boxShadow = ' 0px 3px 8px 6px rgba(117, 0, 0, 0.25)';
+		element.style.backgroundColor = '#ffffff';
 	}, []);
 
 	return (
-		<div className="dashboard-container">
-			<div className="details-section">
-				<div className="cards-container">
-					<Card />
-					<Card />
+		<div className="main-dashboard-container">
+			<Navbar />
+			<div className="dashboard-container">
+				<div className="details-section">
+					<div className="cards-container">
+						<Card />
+						<Card />
+					</div>
+					<div className="list-card-container">
+						<ListCard />
+						<iframe
+							width="100"
+							height="200"
+							className="embed-video"
+							src="https://youtube.com/embed/B6dAPXpUjCE"></iframe>
+					</div>
+					<div className="cards-container">
+						<Button className="call-to-action" text="Get Help"></Button>
+						<Button className="call-to-action" text="Give Help"></Button>
+					</div>
 				</div>
-				<div className="list-card-container">
-					<ListCard />
-					<iframe
-						width="100"
-						height="200"
-						className="embed-video"
-						src="https://youtube.com/embed/B6dAPXpUjCE"></iframe>
+				<div ref={endDiv} id="request-container" className="request-section hide-scroll-bar">
+					{Array(10)
+						.fill('0')
+						.map((_, index) => (
+							<>
+								<Request />
+								{index === 9 ? <div /> : null}
+							</>
+						))}
 				</div>
-				<div className="cards-container">
-					<Button className="call-to-action" text="Get Help"></Button>
-					<Button className="call-to-action" text="Give Help"></Button>
-				</div>
-			</div>
-			<div ref={endDiv} id="request-container" className="request-section hide-scroll-bar">
-				{Array(10)
-					.fill('0')
-					.map((_, index) => (
-						<>
-							<Request />
-							{index === 9 ? <div /> : null}
-						</>
-					))}
 			</div>
 		</div>
 	);
