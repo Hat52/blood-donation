@@ -89,7 +89,10 @@ const ListCard = () => {
 		<div className="rarest-blood-type">
 			<div className="heading-div">
 				<h3 className="h3">Rarest Blood Type</h3>
-				<Tooltip />
+				<Tooltip
+					description="There are eight main blood types but some are rarer than others. The list below shows
+					the percentage of donors with each blood type"
+				/>
 			</div>
 			<ol>
 				{Collections.rarestBloodType.map((type) => (

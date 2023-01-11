@@ -1,14 +1,11 @@
 import './index.css';
 
-const Tooltip = () => {
+const Tooltip = ({ description }) => {
 	return (
 		<div className="tool-tip">
 			<div className="tooltip-icon">i</div>
 			<div className="description-tooltip">
-				<p>
-					There are eight main blood types but some are rarer than others. The list below shows
-					the percentage of donors with each blood type
-				</p>
+				<p>{description}</p>
 			</div>
 		</div>
 	);
