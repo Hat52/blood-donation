@@ -25,6 +25,12 @@ export default function Dashboard() {
 				</div>
 				<div className="list-card-container">
 					<ListCard />
+
+					<iframe
+						width="100"
+						height="200"
+						className="embed-video"
+						src="https://youtube.com/embed/B6dAPXpUjCE"></iframe>
 				</div>
 			</div>
 			<div ref={endDiv} id="request-container" className="request-section hide-scroll-bar">
