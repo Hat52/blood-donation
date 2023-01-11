@@ -58,7 +58,7 @@ const Card = () => {
 	return (
 		<div className="stats-cards">
 			<img src={Pattern} className="pattern" />
-			<div className="description">8,000 + units of Blood is Reuired Everyday in Pakistan </div>
+			<div className="description">8,000 + units of Blood is Required Everyday in Pakistan </div>
 		</div>
 	);
 };
