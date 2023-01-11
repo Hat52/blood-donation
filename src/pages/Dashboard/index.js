@@ -15,6 +15,7 @@ export default function Dashboard() {
 	useEffect(() => {
 		scrollToBottom();
 	}, []);
+
 	return (
 		<div className="dashboard-container">
 			<div className="details-section">

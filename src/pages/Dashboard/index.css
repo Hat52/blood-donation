@@ -4,6 +4,9 @@
 }
 .dashboard-container .details-section {
 	width: 70%;
+	padding-left: 5%;
+	padding-right: 5%;
+	box-sizing: border-box;
 }
 .dashboard-container .request-section {
 	width: 30%;
