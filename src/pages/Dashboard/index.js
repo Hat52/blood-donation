@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Pattern } from '../../assets/img';
 import { Collections } from '../../constants';
-import { Tooltip } from '../../components/';
+import { Button, Tooltip } from '../../components/';
 import './index.css';
 
 export default function Dashboard() {
@@ -25,12 +25,15 @@ export default function Dashboard() {
 				</div>
 				<div className="list-card-container">
 					<ListCard />
-
 					<iframe
 						width="100"
 						height="200"
 						className="embed-video"
 						src="https://youtube.com/embed/B6dAPXpUjCE"></iframe>
+				</div>
+				<div className="cards-container">
+					<Button className="call-to-action" text="Get Help"></Button>
+					<Button className="call-to-action" text="Give Help"></Button>
 				</div>
 			</div>
 			<div ref={endDiv} id="request-container" className="request-section hide-scroll-bar">
