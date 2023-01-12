@@ -8,10 +8,6 @@ export default function Routes() {
 			element: <Landing />
 		},
 		{
-			path: '/login/:code',
-			element: <Landing />
-		},
-		{
 			path: '/login',
 			element: <Login />
 		},
