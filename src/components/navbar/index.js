@@ -5,9 +5,8 @@ import { Collections } from '../../constants';
 import Button from '../button';
 import { useAuth0 } from '@auth0/auth0-react';
 
-export default function Navbar() {
-	const { loginWithRedirect, logout, user, isLoading } = useAuth0();
-	console.log(isLoading, user, window.location);
+export default function Navbar({ loggedIn }) {
+	const { loginWithRedirect, logout } = useAuth0();
 	return (
 		<div className="nav-bar" id="navbar">
 			<img src={TextLogo} alt="blood donation logo" />
@@ -15,7 +14,7 @@ export default function Navbar() {
 				{Collections.Navbar.map(({ name, link }) => {
 					return <Link to={link}>{name}</Link>;
 				})}
-				{/* {!isLoading && user && (
+				{loggedIn ? (
 					<Button
 						className="auth-button"
 						style={{
@@ -28,19 +27,20 @@ export default function Navbar() {
 						}
 						text="Log out"
 					/>
-				)} */}
-				<Button
-					className="auth-button"
-					style={{
-						background: 'yellow !important'
-					}}
-					onClick={() =>
-						loginWithRedirect({
-							redirectUri: 'http://localhost:3000/dashboard'
-						})
-					}
-					text="Log in"
-				/>
+				) : (
+					<Button
+						className="auth-button"
+						style={{
+							background: 'yellow !important'
+						}}
+						onClick={() =>
+							loginWithRedirect({
+								redirectUri: 'http://localhost:3000/dashboard'
+							})
+						}
+						text="Log in"
+					/>
+				)}
 			</div>
 		</div>
 	);

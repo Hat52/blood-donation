@@ -21,7 +21,7 @@ export default function Dashboard() {
 
 	return (
 		<div className="main-dashboard-container">
-			<Navbar />
+			<Navbar loggedIn={true} />
 			<div className="dashboard-container">
 				<div className="details-section">
 					<div className="cards-container">
