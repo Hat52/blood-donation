@@ -3,6 +3,7 @@ import { Pattern } from '../../assets/img';
 import { Collections } from '../../constants';
 import { Button, Navbar, Tooltip } from '../../components/';
 import './index.css';
+import { giveNavbarDropShadow } from '../../utils';
 
 export default function Dashboard() {
 	const endDiv = useRef(null);
@@ -14,9 +15,7 @@ export default function Dashboard() {
 
 	useEffect(() => {
 		scrollToBottom();
-		const element = document.getElementById('navbar');
-		element.style.boxShadow = ' 0px 3px 8px 6px rgba(117, 0, 0, 0.25)';
-		element.style.backgroundColor = '#ffffff';
+		giveNavbarDropShadow();
 	}, []);
 
 	return (

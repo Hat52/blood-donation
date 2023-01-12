@@ -10,7 +10,13 @@ input,
 button,
 a,
 textarea,
-label {
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: 'Open Sans';
 	font-style: normal;
 }
@@ -26,4 +32,10 @@ body::-webkit-scrollbar {
 body {
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
+}
+
+p,
+h1 {
+	margin: 0;
+	padding: 0;
 }

@@ -4,5 +4,6 @@ import Signup from './Signup';
 import ContactUs from './Contactus';
 import GetHelp from './GetHelp';
 import Dashboard from './Dashboard';
+import About from './About';
 
-export { Dashboard, Landing, Login, Signup, ContactUs, GetHelp };
+export { Dashboard, Landing, About, Login, Signup, ContactUs, GetHelp };

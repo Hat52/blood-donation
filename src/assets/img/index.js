@@ -9,8 +9,10 @@ import Login from './login.svg';
 import Logo from './logo.svg';
 import Signup from './signup.png';
 import Pattern from './pattern.svg';
+import About from './about.jpg';
 
 export {
+	About,
 	Pattern,
 	TextLogo,
 	Section1,

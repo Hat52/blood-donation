@@ -5,7 +5,7 @@ const Navbar = [
 	},
 	{
 		name: 'About',
-		link: '#'
+		link: '/about'
 	}
 ];
 
