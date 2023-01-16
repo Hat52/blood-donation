@@ -1,0 +1,26 @@
+.nav-bar {
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 2% !important;
+	z-index: 1;
+}
+
+.nav-bar .link-collections {
+	width: 12%;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 3% !important;
+}
+.nav-bar .link-collections a {
+	color: #750000;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 4px;
+}

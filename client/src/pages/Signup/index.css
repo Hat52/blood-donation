@@ -1,0 +1,10 @@
+.sign-up-form {
+	overflow: scroll;
+}
+.sign-up-form::-webkit-scrollbar {
+	display: none;
+}
+.sign-up-form {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}

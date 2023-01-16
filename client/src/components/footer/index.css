@@ -1,0 +1,48 @@
+.footer-container {
+	background: #ffffff;
+	box-shadow: 0px -1px 4px rgba(163, 0, 0, 0.25);
+	display: flex;
+	padding-left: 40px;
+	padding-right: 40px;
+	justify-content: space-between;
+	align-items: center;
+	height: 140px;
+}
+.footer-container h3 {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 20px;
+	color: #a30000;
+}
+
+.footer-container .text-logo {
+	height: 30px;
+}
+.footer-container .about-p {
+	width: 300px;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	text-transform: capitalize;
+	color: #768387;
+}
+
+.here-link {
+	color: #a30000;
+}
+
+.open-source-link {
+	padding: 0;
+	margin: 0;
+	width: 183px;
+}
+
+.social-links-container {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 2px;
+}

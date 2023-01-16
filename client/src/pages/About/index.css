@@ -1,0 +1,38 @@
+.about-container .content {
+	padding-top: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about-container .content {
+	color: #a30000;
+}
+
+.about-project {
+	display: flex;
+	justify-content: center;
+	gap: 20%;
+	padding-top: 5%;
+}
+
+.image-container-about {
+	width: 400px;
+	background-image: url('../../assets/img/about.jpg');
+	height: 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 12px;
+}
+
+.text-description {
+	text-align: left;
+	display: flex;
+	align-items: center;
+	width: 400px;
+	font-size: 20px;
+}
